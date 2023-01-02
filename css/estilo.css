@@ -1,0 +1,186 @@
+* {
+    padding: o;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-image: linear-gradient(rgba(34, 34, 53, 0), rgba(255, 255, 0, 0.5)),
+        url(../imagen/fondo.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: none;
+}
+
+
+.nav-item {
+    transition: all 1s;
+    font-size: small;
+
+
+}
+
+.nav-item:hover {
+    background-color: rgb(181, 216, 247);
+    font-size: 15px;
+}
+
+.img-fluid {
+    border-style: outset;
+    border-radius: 5%;
+
+}
+
+h1 {
+    padding: 2% 2% 1% 2%;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    text-shadow: 3px 5px 5px rgb(238, 237, 220);
+}
+
+section p {
+    margin: 2%;
+    font-weight: bold;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+.principal img {
+    width: 60%;
+    border-style: outset;
+    border-radius: 5%;
+    margin: 1%;
+}
+
+.galeria div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.galeria img {
+    position: relative;
+    right: 5px;
+    width: 40%;
+    margin: 2px;
+    border-style: outset;
+    border-radius: 5%;
+}
+
+footer {
+    display: flex;
+}
+
+footer div {
+    display: flex;
+    width: 50%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+footer div p {
+    padding-top: 1rem;
+    padding-left: 1%;
+}
+
+footer div a {
+    padding-top: 0;
+    margin-right: 1%;
+    margin-left: 1%;
+    font-size: 30px;
+    transition: all 1s;
+}
+
+footer div a:hover {
+    background-color: rgb(181, 216, 247);
+    font-size: 40px;
+}
+
+.footer {
+    display: flex;
+    width: 50%;
+}
+
+.footer li {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    font-size: 30px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    transition: all 1s;
+}
+
+.footer li:hover {
+    background-color: rgb(181, 216, 247);
+    font-size: 40px;
+}
+
+
+.contacto {
+
+    display: flex;
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto form {
+
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+
+    border-radius: 20%;
+    justify-content: center;
+    align-content: space-between;
+    gap: 2%;
+}
+
+form button {
+    width: 200px;
+    border-style: outset;
+    border-radius: 10%;
+    margin-top: 10px;
+    transition: all 1s;
+}
+
+form button:hover {
+
+    font-size: xx-large;
+}
+
+form div {
+
+    padding: 2%;
+    font-size: 15px;
+}
+
+.padding {
+    padding-top: 8%;
+}
+
+.galeria__padding img {
+    right: 5px;
+    margin: 2px;
+    border-style: outset;
+    border-radius: 5%;
+}
+
+@media screen and (max-width: 840px) {
+    iframe {
+        width: auto;
+    }
+}
