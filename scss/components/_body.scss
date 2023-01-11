@@ -1,0 +1,12 @@
+.body__fondo {
+    background-image: linear-gradient($gradienti) ,
+        url(../imagen/fondo.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: none;
+}
+
+body {
+    @extend .body__fondo;
+    background-image: linear-gradient($gradientcolor);
+}

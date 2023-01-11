@@ -1,0 +1,21 @@
+.principal {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+
+
+    img {
+        width: 60%;
+        border-style: outset;
+        border-radius: 5%;
+        margin: 1%;
+    }
+}
+
+
+.galeria__padding img {
+    right: 5px;
+    margin: 2px;
+    border-style: outset;
+    border-radius: 5%;
+}
