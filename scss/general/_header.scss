@@ -1,11 +1,4 @@
-.nav-item {
-    transition: all 1s;
-    font-size: small;
 
-    &:hover {
-        @include hover ($colorhover, 15px);
-    }
-}
 
 .img-fluid {
     border-style: outset;

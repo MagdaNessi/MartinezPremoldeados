@@ -1,7 +1,7 @@
 .body__fondo {
     background-image: linear-gradient($gradienti) ,
-        url(../imagen/fondo.jpeg);
-    background-size: contain;
+        url(../imagen/logo.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     opacity: none;
 }

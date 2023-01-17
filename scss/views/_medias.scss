@@ -1,19 +1,75 @@
 @media screen and (max-width: 840px) {
     iframe {
-        width: auto;
+        width: 319px !important;
+    }
+    .body__fondo {
+        background-size: 900px;
     }
 }
 
-@media screen and (max-width: 1023px) {
-    footer {
-        width: 90%;
+
+@media screen and (min-width: 770px) {
+    .nav-item {
+        transition: all 1s;
+        font-size: small;
         
+
+        &:hover {
+            @include hover ($colorhover, 15px);
+            
+        }
     }
-    
+
+    footer {
+        a {
+            transition: all 1s;
+
+            &:hover {
+                @include hover ($colorhover, 35px);
+            }
+        }
+
+        li {
+            transition: all 1s;
+
+            &:hover {
+                @include hover ($colorhover, 35px);
+            }
+        }
+    }
+
+    button {
+
+        transition: all 1s;
+
+        &:hover {
+            padding: 1px 2px;
+            width: 150px;
+            font-size: 25px;
+        }
+
+    }
+
 }
-@media screen and (max-width: 479px) {
-    .principal {
+
+@media screen and (max-width: 768px) {
+
+    footer {
+        div {
+            a {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .footer {
+        a {
+            font-size: 20px;
+        }
+    }
+
+    .principal img {
         width: 100%;
-        
+
     }
 }
