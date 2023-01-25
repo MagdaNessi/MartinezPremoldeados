@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2? family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
 
-    <title>Contactanos</title>
+    <title>Contáctanos</title>
     <link rel="shortcut icon" href="../imagen/logo.jpg">
 
     <!--CDN ANIMATE-->
@@ -60,7 +60,7 @@
                             <a class="nav-link" href="./galeria.html">Galería</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="./contactanos.html">Contactanos</a>
+                            <a class="nav-link active" href="./contactanos.html">Contáctanos</a>
                         </li>
 
 
@@ -75,39 +75,55 @@
             <h1 class=" animate__animated animate__backInLeft">Contáctanos</h1>
         </section>
         <article>
-            <div class="container text-center flex-wrap mx-0">
-                <div class="row ">
-                    <div class="col-sm-12 col-md-12 col-lg-8">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.2110932787887!2d-63.37013647485441!3d-34.67462143474327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c5bb3dac9cbe4d%3A0x6447bd2ed74fab03!2sclub%20atletico%20charlone!5e0!3m2!1ses-419!2sar!4v1673962787539!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <div class="col contacto">
-                        <form>
 
-                            <div class="padding">
+            <div class="container-fluid text-center my-5">
+                <div class="row">
+
+                    <div class="col-sm-12 col-md-8 col-lg-8">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.2110932787887!2d-63.37013647485441!3d-34.67462143474327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c5bb3dac9cbe4d%3A0x6447bd2ed74fab03!2sclub%20atletico%20charlone!5e0!3m2!1ses-419!2sar!4v1673962787539!5m2!1ses-419!2sar"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p>Nos encontramos en el noroeste de la provincia de bs as, en la localidad de coronel charlone.
+                        </p>
+                        <p>Puedes dejarnos tu duda, consulta o descripción de lo que necesites realizar, te
+                            responderemos a la brevedad con un presupuesto o asesoramiento personalizado. </p>
+                        <p>NO LO DUDES MÁS! Estamos a tu disposición.</p>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+
+                        <form>
+                            <legend class="text-center header">¿En qué podemos ayudarle?</legend>
+                            <div class=>
                                 <label for="inombre">Nombre</label>
-                                <input text="nombre" id="inombre" placeholder="Nombre">
+                                <input text="nombre" id="inombre" placeholder="Nombre" class="form-control">
                             </div>
 
                             <div>
                                 <label for="iapellido">Apellido</label>
-                                <input text="surname" id="iapellido" placeholder="Apellido">
+                                <input text="surname" id="iapellido" placeholder="Apellido" class="form-control">
                             </div>
                             <div>
                                 <label for="tel">Telefono</label>
-                                <input type="tel" id="tel" placeholder="01132134564">
+                                <input type="tel" id="tel" placeholder="01132134564" class="form-control">
                             </div>
                             <div>
                                 <label for="email">Correo</label>
-                                <input type="email" id="email" placeholder="correo@hotmail.com">
+                                <input type="email" id="email" placeholder="correo@hotmail.com" class="form-control">
                             </div>
-                            <button type="submit">Enviar</button>
+                            <div>
+                                <p>Consulta</p>
+                                <textarea class="form-control" id="message" name="message"
+                                    placeholder="Dejanos aquí tu consulta y te contactaremos a la brevedad."></textarea>
+                            </div>
 
+                            <button type="submit" class="btn btn-primary">Enviar</button>
 
                         </form>
-
                     </div>
                 </div>
-            </div>
+
         </article>
     </main>
 
@@ -121,7 +137,6 @@
 
             <li><a href="https://es-la.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
             <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
             <li><a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
 
         </ul>

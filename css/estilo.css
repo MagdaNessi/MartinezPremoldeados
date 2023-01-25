@@ -17,44 +17,51 @@ body {
   border-radius: 5%; }
 
 h1 {
-  padding: 2% 2% 1% 2%;
+  padding: 3% 2% 1% 2%;
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
   text-shadow: 3px 5px 5px #585744; }
 
+.animate__flipInX {
+  color: #fc1111; }
+
 footer {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  height: 80px; }
+  height: 85px;
+  width: 100%; }
   footer div {
     display: flex;
-    width: 40%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-left: 1rem; }
+    width: 50%;
+    align-items: center; }
     footer div p {
+      justify-content: center;
       padding-top: 1rem;
       padding-left: 1%;
       font-size: 15px; }
     footer div a {
-      padding-top: 0;
+      justify-content: center;
       margin-right: 1%;
-      margin-left: 1rem;
-      font-size: 30px;
+      margin-left: 2rem;
+      font-size: 25px;
       color: #f8b863; }
 
 .footer {
   display: flex;
-  width: 60%;
-  margin-left: 1rem; }
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 0;
+  width: 50%;
+  margin-right: 4px; }
   .footer li {
     display: flex;
-    justify-content: space-around;
-    width: 50%;
-    font-size: 30px;
-    padding-top: 1rem; }
+    justify-content: center;
+    align-items: flex-end;
+    width: 20%;
+    font-size: 25px;
+    margin-right: 3px; }
     .footer li a {
       color: #f8b863; }
 
@@ -80,36 +87,49 @@ section p {
   border-style: outset;
   border-radius: 5%; }
 
-.contacto {
+.col {
   display: flex;
-  width: 100%;
-  height: 400px;
-  justify-content: center;
-  align-items: center; }
-  .contacto form {
-    width: 100%;
-    height: 100%;
-    padding: 5%;
-    border-radius: 15%;
-    justify-content: center;
-    gap: 2%; }
-    .contacto form div {
-      padding: 2%;
-      font-size: 14px;
-      /*font-weight: map-get($size_parrafo, weight);*/ }
-    .contacto form .padding {
-      padding-top: 8%; }
-    .contacto form button {
-      width: 100px;
-      border-style: outset;
-      border-radius: 10%;
-      margin-top: 10px; }
+  justify-content: center; }
+
+iframe {
+  padding: 3px; }
+
+.btn {
+  margin-top: 2%; }
+
+.grilla__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, auto); }
+
+.grilla__grid div {
+  text-align: center;
+  width: 100%; }
+
+.grilla__grid img {
+  width: 90%; }
+
+.texto__titulo {
+  grid-column: 1 / 3; }
+
+.img__grid1 {
+  grid-column: 1 / 2; }
+
+.img__grid2 {
+  grid-column: 2 / 3; }
+
+.texto__titulo--segundo {
+  grid-column: 1 / 3; }
+
+.img__grid3 {
+  grid-column: 1 / 2; }
+
+.img__grid4 {
+  grid-column: 2 / 3; }
 
 @media screen and (max-width: 840px) {
   iframe {
-    width: 319px !important; }
-  .body__fondo, body {
-    background-size: 900px; } }
+    width: 319px !important; } }
 
 @media screen and (min-width: 770px) {
   .nav-item {
@@ -117,17 +137,21 @@ section p {
     font-size: small; }
     .nav-item:hover {
       background-color: #f7ebdd;
-      font-size: 15px; }
+      font-size: 15px;
+      border-style: solid;
+      border-radius: 6px; }
   footer a {
     transition: all 1s; }
     footer a:hover {
       background-color: #f7ebdd;
-      font-size: 35px; }
+      font-size: 25px;
+      border-radius: 3px; }
   footer li {
     transition: all 1s; }
     footer li:hover {
       background-color: #f7ebdd;
-      font-size: 35px; }
+      font-size: 25px;
+      border-radius: 3px; }
   button {
     transition: all 1s; }
     button:hover {
@@ -136,9 +160,24 @@ section p {
       font-size: 25px; } }
 
 @media screen and (max-width: 768px) {
+  footer div p {
+    font-size: small; }
   footer div a {
     font-size: 20px; }
   .footer a {
     font-size: 20px; }
   .principal img {
     width: 100%; } }
+
+@media screen and (max-width: 740px) {
+  .grilla__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto); }
+  .texto__titulo {
+    grid-column: 1 /2; }
+  .img__grid2 {
+    grid-column: 1 /2; }
+  .texto__titulo--segundo {
+    grid-column: 1 /2; }
+  .img__grid4 {
+    grid-column: 1 /2; } }
